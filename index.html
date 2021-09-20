@@ -1,81 +1,444 @@
-Test
-<h1> HEADING </h1>
 <!DOCTYPE html>
+<html >
+<head>
+	<!-- Document  -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="zaelani"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="images/favicon/favicon.ico" rel="icon">
 
-<div>
+	<!-- Fonts  -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800' rel='stylesheet' type='text/css'>
 
-    <head>
-        <title>Latihan Website</title>
-        <link rel="stylesheet" href="fileCSS.css"/>
-        <nav>
-            <ul class="navbar">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRODUCT</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">INVENTORY</a></li>
-            </ul>
-         </nav>
-    </head>
+	<!-- Stylesheets  -->
+	<link href="css/external.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Zaelani Apriadi Landing Page</title>
+</head>
 
-    <div class="container">
-    <section>
-        <div >
-            <img class="gambar" src="logo.jpg" width="150" height="150"/>
-        </div>
-        <div class="profile">
-        <h1>ZAELANI APRIADI</h1>
-        Front End Designer
-        <br/><br/>
-        <Button class="button-kontak">Contact </Button>
-        <Button class="button-resume">Resume </Button>
-        </div>
+<body class="body-scroll">
+	<!-- Document Wrapper  -->
+	<div id="wrapper" class="wrapper clearfix">
+		
+		<!-- Header  -->
+		<header id="navbar-spy" class="header header-1 header-transparent header-bordered header-fixed">
 
-        <div>
-        <br/>
-        <b>Availability :</b>
-        Full Time
-        <br/><br/>
-        <b>Usia :</b>
-        29 Tahun
-        <br/><br/>
-        <b>Lokasi :</b>
-        Jakarta Barat
-        <br/><br/>
-        <b>Pengalaman   :</b>
-        1 Tahun
-        <br/><br/>
-        <b>Email        :</b>
-        zaelani.apriadi@gmail.com
-        </div>
-    </section>
+			<nav id="primary-menu" class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					
+						<a class="logo" href="index.html"><h1 class="hidden-xs pt-30">Zaelani Apriadi</h1></a>
+					</div>
+					<div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+						<ul class="nav navbar-nav nav-pos-right navbar-left nav-split">
+							<li class="active"><a data-scroll="scrollTo" href="#slider">Home</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#video">About</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#screenshots">Portfolio</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#reviews">Blog</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#pricing">Team</a>
+							</li>
+							<li><a data-scroll="scrollTo" href="#cta">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</nav>
+		</header>
 
-        <form>
+		<!-- HOME -->
+		<section id="slider" class="section slider">
+			<div class="slide--item bg-theme">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="slide--logo mt-100 hidden-xs wow fadeInUp" data-wow-duration="1s">	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 pt-80 wow fadeInUp" data-wow-duration="1s">
+							<div class="slide--headline">
+								<h1>Zaelani Apriadi</h1>
+							</div>
+							<div class="slide--bio">Technology Enthusiast, Technical Support, Developer</div>
+							<div class="slide--action">
+								<form class="mb-0 form-action">
+									<div class="input-group">
+										</span>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4 pt-10 col-md-offset-2 wow fadeInUp" data-wow-duration="1s">
+							<img class="img-responsive pull-right" src="images/iphone.png" alt="screens">
+						</div>
+					</div>
+					<!-- .row end -->
+				</div>
+				<!-- .container end -->
+			</div>
+			<!-- .slide-item end -->
+		</section>
+		<!-- #slider end -->
 
-            <label for="nama">Nama</label>
-            <input type="text" name="nama" value="Masukan Nama Anda"><br>
-            <label for="">Role</label>
-            <input type="text" name="" value=""><br>
-            <label for="">Availability</label>
-            <input type="text" name="" value=""><br>
-            <label for="">Usia</label>
-            <input type="text" name="" value=""><br>
-            <label for="kota">Lokasi</label>
-            <select name="kota">
-                <option>Jakarta</option>
-                <option>Bandung</option>
-                <option>Tangerang</option>
-            </select>
-            <br/>
-            <label for="nama">Year Experience</label>
-            <input type="text" name="" value=""><br>
-            <label for="nama">Email</label>
-            <input type="text" name="" value=""><br>
-            <button class="button-form">SUBMIT</button>
-            
-        </form>
+
+		<!-- About  -->
+		<section id="video" class="section video bg-theme bg-parallex">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<class class="heading heading-1 mb-10 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title text-white">About Me</h2>
+							<p class="heading--desc text-white">Saya seorang Pria 28 tahun (single),
+								tinggal di Cengkareng, Jakarta Barat.
+								Edukasi terakhir Diploma 3 lulusan BSI tahun 2012 <br/>
+								Berprofesi sebagai IT/ ahli teknologi sudah sekitar 10 tahun lebih </p>
+								<br/> <br/>
+							<p class="heading--desc text-white">Saya menyukai teknologi sejak computer masih menggunakan disket <br/>
+								saat sekolah saya sangat hoby membaca majalah teknologi seperti CHIP, PC Media, Info Komputer dan lain-lain.
+								Karena itu saya sering menghabiskan waktu sendirian dan kurang bersosialisasi hingga saat ini. </p>
+								<br/> <br/>
+							<p class="heading--desc text-white">Komunikasi adalah salah satu kelemahan saya,
+								selalu berpikir jauh kedepan sebelum mengucapkan sebuah kata
+								membuat saya gugup dan malu untuk memulai sebuah percakapan.
+								namun hal tersebut menjadi sangat berbeda jika membahas atau mendiskusikan sesuatu
+								tentang update perkembangan ataupun pekerjaan yang berhubungan dengan teknologi. </p>
+								<br/> <br/>
+							<p class="heading--desc text-white">Menjadi seorang pribadi yang pendiam namun berwawasan luas tentang teknologi,
+								Saya sangat menyukai hal-hal baru khususnya tentang teknologi.
+								Suka berexperiment hingga lupa waktu, selalu mencari update solusi terbaik
+								jika ada permasalahan teknis, rasa ingin menyelesaikannya sangat tinggi
+								karena seperti sebuah puzzle yang membuat saya tertantang untuk memperbaiki puzzle tersebut. </p>		
+							</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				
+			</div>
+		</section>
+		<!-- #video end -->
+		
+		<!-- Portfolio -->
+		<section id="screenshots" class="section screenshots">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-60 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Portfolio</h2>
+							<p class="heading--desc">Dapat melakukan Instalasi, Konfigurasi,Troubleshooting alat - alat technology, dan menciptakan perangkat lunak pendukung</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="carousel" data-slide="4" data-slide-res="2" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="1000">
+							<!-- screenshot #1 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/1.jpg" alt="client">
+							</div>
+
+							<!-- screenshot #2 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/2.jpg" alt="client">
+							</div>
+
+							<!-- screenshot #3 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/3.jpg" alt="client">
+							</div>
+
+							<!-- screenshot #4 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/4.jpg" alt="client">
+							</div>
+
+							<!-- screenshot #5 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/3.jpg" alt="clclientient">
+							</div>
+
+							<!-- screenshot #6 -->
+							<div class="screenshot">
+								<img class="center-block" src="images/screenshots/2.jpg" alt="screenshot">
+							</div>
+						</div>
+					</div>
+					<!-- .col-md-12 end -->
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container End -->
+		</section>
 
 
-    </div>
+		<!-- Blog  -->
+		<section id="reviews" class="section reviews bg-white">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-60 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">User reviews</h2>
+							<p class="heading--desc">Apa kata mereka tentang saya.?</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<!--  Testimonial #1  -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="testimonial-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="testimonial-body">
+								<div class="testimonial--body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde quasi, quia at ab consectetur deleniti magni reiciendis animi sapiente delectus ipsam magnam fuga natus cum dicta praesentium, qui dolor.</p>
+								</div>
+								<div class="testimonial--meta">
+									<div class="testimonial--author pull-left">
+										<h5>Abdul</h5>
+									</div>
+									<div class="testimonial--rating pull-right">
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star-half-full"></i>
+										<i class=" fa fa-star-o"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  Testimonial #2  -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="testimonial-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="testimonial-body">
+								<div class="testimonial--body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint nostrum repellat atque. Officiis ullam necessitatibus facere doloribus magni! Qui voluptates debitis similique nam repellendus, nobis nemo sed pariatur sint.</p>
 
+								</div>
+								<div class="testimonial--meta">
+									<div class="testimonial--author pull-left">
+										<h5>Siska</h5>
+									</div>
+									<div class="testimonial--rating pull-right">
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  Testimonial #3  -->
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="testimonial-panel wow fadeInUp" data-wow-duration="1s">
+							<div class="testimonial-body">
+								<div class="testimonial--body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus quas voluptatibus. Totam tenetur cum reiciendis temporibus perferendis quisquam ratione placeat deserunt quia voluptas vitae, facere nulla quasi earum repudiandae!</p>
+
+								</div>
+								<div class="testimonial--meta">
+									<div class="testimonial--author pull-left">
+										<h5>Budi</h5>
+									</div>
+									<div class="testimonial--rating pull-right">
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star"></i>
+										<i class=" fa fa-star-half-full"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container End -->
+		</section>
+
+
+		<!-- TEAM  -->
+		<section id="pricing" class="section pricing pricing-1 bg-theme bg-parallex">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-60 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title text-white">Meet The Team</h2>
+							<p class="heading--desc text-white">Mereka semua adalah partner yang membantu saya dalam menjalankan sebuah Project</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<!-- Team 1 -->
+					<div class=" col-xs-12 col-sm-4 col-md-4 price-table wow fadeInUp" data-wow-duration="1s">
+						<div class="pricing-panel pricing-active">
+							<!--  Pricing heading  -->
+							<div class="pricing--heading text--center">
+								<h4>Experienced Programmer</h4>
+								<div class="pricing--heading">
+									<p>Bento</p>
+									<div class="pricing--desc">
+										Bekerja sebagai Fullstack Developer di PT.TECHNOLOGY
+									</div>
+								</div>
+							</div>
+							<!--  Pricing body  -->
+							<div class="pricing--body">
+								<a class="btn btn--primary" href="#">Contact Bento</a>
+							</div>
+							<!--  Pricing Body  -->
+						</div>
+					</div>
+					<!-- .pricing-table End -->
+
+					<!-- Team 2  -->
+					<div class=" col-xs-12 col-sm-4 col-md-4 price-table wow fadeInUp" data-wow-duration="1s">
+						<div class="pricing-panel pricing-active">
+							<!--  Pricing heading  -->
+							<div class="pricing--heading text--center">
+								<h4>UI/UX Designer</h4>
+								<div class="pricing--heading">
+									<p>Sarah</p>
+									<div class="pricing--desc">
+										Web Designer, Mobile UI designer, Profesional dalam urusan Front-End-Developer
+									</div>
+								</div>
+							</div>
+							<!--  Pricing body  -->
+							<div class="pricing--body">
+								<a class="btn btn--primary" href="#">Contact Sarah</a>
+							</div>
+							<!--  Pricing Body  -->
+						</div>
+					</div>
+					<!-- .pricing-table End -->
+
+					<!-- Team 3  -->
+					<div class=" col-xs-12 col-sm-4 col-md-4 price-table wow fadeInUp" data-wow-duration="1s">
+						<div class="pricing-panel pricing-active">
+							<!--  Pricing heading  -->
+							<div class="pricing--heading text--center">
+								<h4>IT Infrastructure </h4>
+								<div class="pricing--heading">
+									<p>Boim</p>
+									<div class="pricing--desc">
+										Pengalaman dalam Set-up Jaringan Komputer, CCTV, Alarm, Security Akses
+									</div>
+								</div>
+							</div>
+							<!--  Pricing body  -->
+							<div class="pricing--body">
+								<a class="btn btn--primary" href="#">Get Started</a>
+							</div>
+							<!--  Pricing Body  -->
+						</div>
+					</div>
+					<!-- .pricing-table End -->
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+
+		
+		<!-- Contact -->
+		<section id="cta" class="section cta text-center pb-0">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-50 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title">Contact Me</h2>
+							<h1>081-776-555-165</h1>
+						</div>
+					</div>
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mb-100 wow fadeInUp" data-wow-duration="1s">
+
+					</div>
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+
+
+		<!-- Contact Foot -->
+		<section id="newsletter" class="section newsletter text-center bg-theme">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<div class="heading heading-1 mb-60 text--center wow fadeInUp" data-wow-duration="1s">
+							<h2 class="heading--title text-white">Tertarik untuk Hire..?</h2>
+							<p class="heading--desc text-white">masukin Email untuk dapat CV saya yang terbaru</p>
+						</div>
+					</div>
+					<!-- .col-md-6 end -->
+				</div>
+				<!-- .row end -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+						<form class="mb-0 form-action wow fadeInUp" data-wow-duration="1s">
+							<div class="input-group">
+								<input type="email" class="form-control" placeholder="E-mail address">
+								<span class="input-group-btn">
+									<input type="submit" class="btn btn--primary" value="Subscribe" name="submit">
+								</span>
+							</div>
+							<!-- .input-group end -->
+						</form>
+					</div>
+					<!-- .col-md-12 end -->
+				</div>
+				<!-- .row end -->
+			</div>
+			<!-- .container end -->
+		</section>
+
+
+		<!-- Footer  -->
+		<footer id="footer" class="footer footer-5">
+			<!-- Copyrights  -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 text--center">
+						<div class="footer--copyright">
+							<span>&copy;2021 Prakerja - Hacktiv8 Training</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- .container end -->
+		</footer>
+	</div>
+
+
+	<!-- Footer Scripts  -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/functions.js"></script>
+</body>
 </html>
